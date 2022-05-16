@@ -38,6 +38,15 @@ Através de vetores string. O programa possui 4 vetores string que armazenam as 
 ~~~c#
 string[] romanos1 = {"I", "X", "C", "M"}, romanos5 = {"V", "L", "D"}, romanos4 = {"IV", "XL", "CD"}, romanos9 = {"IX", "XC", "CM"}
 ~~~
+Supondo que, em um número de 3 algarismos, o número 6 está na 2ª posição (dezena). Como já explicado, um número com 3 algarismos fará com que *tamanho* receba 2. A partir disso, o programa fará a seguinte análise:
+~~~c#
+string numRomano += (romanos5[tamanho - (posicao - 1)] + romanos1[tamanho - (posicao - 1)]);
+~~~
+Ou seja:
+~~~c#
+string numRomano += (romanos5[2 - 1] + romanos1[2 - 1]);
+~~~
+Explicando o código acima, a variável *numRomano* (que seria o texto onde será guardado o número romano do número inserido) receberá a união das string **L** 
 
 ## Atenção!
 - Evite de clicar no botão com a TextBox sem texto, com letras ou com caracteres especiais;
