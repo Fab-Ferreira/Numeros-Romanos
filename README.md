@@ -36,10 +36,7 @@ Resultado: **MMCCCLIX**
 ### Como que o programa sabe qual letra aplicar para cada algarismo?
 Através de vetores string. O programa possui 4 vetores string que armazenam as letras:
 ~~~c#
-string[] romanos1 = {"I", "X", "C", "M"}
-string[] romanos5 = {"V", "L", "D"}
-string[] romanos4 = {"IV", "XL", "CD"}
-string[] romanos9 = {"IX", "XC", "CM"}
+string[] romanos1 = {"I", "X", "C", "M"}, romanos5 = {"V", "L", "D"}, romanos4 = {"IV", "XL", "CD"}, romanos9 = {"IX", "XC", "CM"}
 ~~~
 
 ## Atenção!
