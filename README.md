@@ -24,13 +24,13 @@ Algarismo | Romano (na unidade de milhar) | Romano (na centena) | Romano (na dez
 8 | inválido | DCCC | LXXX | VIII
 9 | inválido | CM | XC | IX
 
-**Por exemplo:** O número 2359 em algarismos romanos.
+**Por exemplo:** O número 2659 em algarismos romanos.
 - O número 2 está na 1ª posição (unidade de milhar), logo seu algarismo romano será o M repetido duas vezes (**MM**);
-- O número 3 está na 2ª posição (centena), logo seu algarismo romano será o C repetido três vezes (**CCC**);
+- O número 6 está na 2ª posição (centena), logo seu algarismo romano será o D unido com o C repetido uma única vez (**DC**);
 - O número 5 está na 3ª posição (dezena), logo seu algarismo romano será o L (**L**);
 - O número 9 está na 4ª posição (unidade), logo seu algarismo romano será o IX (**IX**);
 
-Resultado: **MMCCCLIX**
+Resultado: **MMDCLIX**
 &nbsp;
 
 ### Como que o programa sabe qual letra aplicar para cada algarismo?
@@ -38,15 +38,17 @@ Através de vetores string. O programa possui 4 vetores string que armazenam as 
 ~~~c#
 string[] romanos1 = {"I", "X", "C", "M"}, romanos5 = {"V", "L", "D"}, romanos4 = {"IV", "XL", "CD"}, romanos9 = {"IX", "XC", "CM"}
 ~~~
-Supondo que, em um número de 3 algarismos, o número 6 está na 2ª posição (dezena). Como já explicado, um número com 3 algarismos fará com que *tamanho* receba 2. A partir disso, o programa fará a seguinte análise:
+Seguindo o exemplo mostrado, em um número de 4 algarismos, o número 6 está na 2ª posição (centena). Como já explicado, um número com 4 algarismos fará com que *tamanho* receba 3. A partir disso, o programa fará a seguinte análise:
 ~~~c#
 string numRomano += (romanos5[tamanho - (posicao - 1)] + romanos1[tamanho - (posicao - 1)]);
 ~~~
 Ou seja:
 ~~~c#
-string numRomano += (romanos5[2 - 1] + romanos1[2 - 1]);
+string numRomano += (romanos5[4 - 2] + romanos1[4 - 2]);
 ~~~
-Explicando o código acima, a variável *numRomano* (que seria o texto onde será guardado o número romano do número inserido) receberá a união das string **L** 
+Explicando o código acima, a variável *numRomano* (que seria o texto onde será guardado o número romano do número inserido) receberá a união da string **"D"** (já que romanos5[2] equivale à "D") com a string **"C"** (já que romanos1[2] equivale à **"C"**), resultando em **DC**.
+
+**Observação:** Lembre-se: em um vetor, a primeira posição é 0, ou seja, romanos5[0] equivale à "V", romanos5[1] equivale à "L", e assim por diante.
 
 ## Atenção!
 - Evite de clicar no botão com a TextBox sem texto, com letras ou com caracteres especiais;
