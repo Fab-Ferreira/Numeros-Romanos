@@ -10,7 +10,7 @@ O programa, primeiramente, identifica a quantidade de algarismos do número que 
 3. 2 algarismos (ou seja, um número entre 10 e 99), a variável *tamanho* receberá 1;
 4. 1 algarismo (ou seja, um número entre 1 e 9), a variável *tamanho* receberá 0;
 
-Após obter o valor de *tamanho*, o programa irá analisar cada algarismo do número que foi digitado. Dependendo do algarismo (2, 3, 7 e 8), haverão repetições de determinadas letras romanas. Segue a tabela abaixo para compreender a formação de cada número:
+Após obter o valor de *tamanho*, o programa irá analisar cada algarismo do número que foi digitado. Dependendo do algarismo (2, 3, 7 e 8), haverão repetições de determinadas letras. Segue a tabela abaixo para compreender a formação de cada número:
 
 Algarismo | Romano (na unidade de milhar) | Romano (na centena) | Romano (na dezena) | Romano (na unidade)
 ----- | ------ | ------ | ------ | ------ 
@@ -24,11 +24,17 @@ Algarismo | Romano (na unidade de milhar) | Romano (na centena) | Romano (na dez
 8 | inválido | DCCC | LXXX | VIII
 9 | inválido | CM | XC | IX
 
+**Por exemplo:** O número 2359 em algarismos romanos.
+- O número 2 está na 1ª posição (unidade de milhar), logo seu algarismo romano será o M repetido duas vezes (**MM**);
+- O número 3 está na 2ª posição (centena), logo seu algarismo romano será o C repetido três vezes (**CCC**);
+- O número 5 está na 3ª posição (dezena), logo seu algarismo romano será o L (**L**);
+- O número 9 está na 4ª posição (unidade), logo seu algarismo romano será o IX (**IX**);
+
+Resultado: **MMCCCLIX**
 &nbsp;
 
 ## Atenção!
 - Evite de clicar no botão com a TextBox sem texto, com letras ou com caracteres especiais;
-- O programa só permite o uso de números **inteiros**, isto é, números negativos e positivos;
-- Caso queira mudar os números da lista, apenas altere o texto dentro do arquivo txt "numeros", localizado na pasta *Bin\Debug*.
+- O programa só permite o uso de números **naturais** entre 1 e 3999;
 
 Este é o meu programa, espero que tenha gostado e que a explicação tenha sido eficiente. No próprio código, há alguns comentários explicando as linhas para caso queira entender melhor.
