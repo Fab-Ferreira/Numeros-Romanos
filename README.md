@@ -33,6 +33,15 @@ Algarismo | Romano (na unidade de milhar) | Romano (na centena) | Romano (na dez
 Resultado: **MMCCCLIX**
 &nbsp;
 
+### Como que o programa sabe qual letra aplicar para cada algarismo?
+Através de vetores string. O programa possui 4 vetores string que armazenam as letras:
+~~~c#
+string[] romanos1 = {"I", "X", "C", "M"}
+string[] romanos5 = {"V", "L", "D"}
+string[] romanos4 = {"IV", "XL", "CD"}
+string[] romanos9 = {"IX", "XC", "CM"}
+~~~
+
 ## Atenção!
 - Evite de clicar no botão com a TextBox sem texto, com letras ou com caracteres especiais;
 - O programa só permite o uso de números **naturais** entre 1 e 3999;
