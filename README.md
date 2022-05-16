@@ -48,7 +48,7 @@ string numRomano += (romanos5[4 - 2] + romanos1[4 - 2]);
 ~~~
 Explicando o código acima, a variável *numRomano* (que seria o texto onde será guardado o número romano do número inserido) receberá a união da string **"D"** (já que romanos5[2] equivale à "D") com a string **"C"** (já que romanos1[2] equivale à **"C"**), resultando em **DC**.
 
-##### Observação
+#### Observação:
 Lembre-se: em um vetor, a primeira posição é 0, ou seja, romanos5[0] equivale à "V", romanos5[1] equivale à "L", e assim por diante.
 
 ## Atenção!
