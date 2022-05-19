@@ -1,8 +1,0 @@
-C:\Users\fabri\OneDrive\Documentos\SharpDevelop Projects\numeros romanos\numeros romanos\bin\Debug\numeros romanos.exe.config
-C:\Users\fabri\OneDrive\Documentos\SharpDevelop Projects\numeros romanos\numeros romanos\bin\Debug\numeros romanos.exe
-C:\Users\fabri\OneDrive\Documentos\SharpDevelop Projects\numeros romanos\numeros romanos\bin\Debug\numeros romanos.pdb
-C:\Users\fabri\OneDrive\Documentos\SharpDevelop Projects\numeros romanos\numeros romanos\obj\Debug\numeros romanos.csprojResolveAssemblyReference.cache
-C:\Users\fabri\OneDrive\Documentos\SharpDevelop Projects\numeros romanos\numeros romanos\obj\Debug\numeros_romanos.MainForm.resources
-C:\Users\fabri\OneDrive\Documentos\SharpDevelop Projects\numeros romanos\numeros romanos\obj\Debug\numeros romanos.csproj.GenerateResource.Cache
-C:\Users\fabri\OneDrive\Documentos\SharpDevelop Projects\numeros romanos\numeros romanos\obj\Debug\numeros romanos.exe
-C:\Users\fabri\OneDrive\Documentos\SharpDevelop Projects\numeros romanos\numeros romanos\obj\Debug\numeros romanos.pdb
